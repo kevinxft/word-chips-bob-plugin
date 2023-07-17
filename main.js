@@ -3,6 +3,14 @@ function getToken() {
   return token;
 }
 
+function isAllAlphabetWithSpace(str) {
+  return /^[a-zA-Z\s]+$/.test(str);
+}
+
+function isAllAlphabet(str) {
+  return /^[a-zA-Z]+$/.test(str);
+}
+
 function supportLanguages() {
   return ["auto", "zh-Hans", "en"];
 }
@@ -15,7 +23,7 @@ async function translate(query) {
     done(query, "请先设置Token");
   } else {
     const word = query.text.trim();
-    if (isSingleWord(word)) {
+    if (isSingleWord(word) && isAllAlphabet(word)) {
       await addWord(word);
       done(query, `单词 ${word} 添加成功`);
     } else {
