@@ -1,6 +1,6 @@
 {
   "identifier": "word-chips",
-  "version": "0.1.8",
+  "version": "0.2",
   "category": "translate",
   "name": "单词碎片",
   "author": "kevinxft",
@@ -16,6 +16,22 @@
         "height": 100,
         "placeholderText": "单词本的token"
       }
+    },
+    {
+      "identifier": "env",
+      "type": "menu",
+      "title": "测试环境",
+      "default": "dev",
+      "menuValues": [
+        {
+          "title": "开发环境",
+          "value": "dev"
+        },
+        {
+          "title": "测试环境",
+          "value": "test"
+        }
+      ]
     }
   ]
 }
