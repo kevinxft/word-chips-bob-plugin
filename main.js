@@ -1,6 +1,6 @@
 var ENV_URL = {
   dev: "http://localhost:3000",
-  test: "http://192.168.2.88:3000",
+  test: "http://192.168.2.105:3000",
   pro: "",
 };
 
@@ -29,7 +29,7 @@ $log.info("word-chips plugin");
 
 function callback(query) {
   return function (resp) {
-    const { message } = resp.data;
+    const { message = "" } = resp.data.data;
     done(query, message);
   };
 }
