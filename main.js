@@ -1,7 +1,7 @@
 var ENV_URL = {
-  dev: "http://localhost:3000",
+  dev: "http://localhost:4999",
   test: "http://192.168.2.105:3000",
-  pro: "",
+  pro: "http://106.52.129.230:4999",
 };
 
 function isAllAlphabetWithSpace(str) {
