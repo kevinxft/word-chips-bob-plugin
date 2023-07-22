@@ -32,7 +32,7 @@
           "value": "test"
         },
         {
-          "title": "生产环境",
+          "title": "正式环境",
           "value": "pro"
         }
       ]
