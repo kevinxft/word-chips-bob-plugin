@@ -1,6 +1,6 @@
 {
   "identifier": "word-chips",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "category": "translate",
   "name": "单词碎片",
   "author": "kevinxft",
@@ -20,8 +20,8 @@
     {
       "identifier": "env",
       "type": "menu",
-      "title": "测试环境",
-      "default": "dev",
+      "title": "环境",
+      "default": "pro",
       "menuValues": [
         {
           "title": "开发环境",
