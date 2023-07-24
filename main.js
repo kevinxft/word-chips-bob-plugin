@@ -29,7 +29,7 @@ $log.info("word-chips plugin");
 
 function callback(query) {
   return function (resp) {
-    const { message = "" } = resp.data.data;
+    const { message = "" } = resp.data;
     done(query, message);
   };
 }
