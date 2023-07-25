@@ -1,6 +1,6 @@
 {
   "identifier": "word-chips",
-  "version": "0.3.3",
+  "version": "0.4.1",
   "category": "translate",
   "name": "单词碎片",
   "author": "kevinxft",
@@ -8,13 +8,31 @@
   "homepage": "chat.tachikoma.online",
   "options": [
     {
-      "identifier": "token",
+      "identifier": "proToken",
       "type": "text",
-      "title": "Token",
+      "title": "proToken",
       "desc": "需要token才能往单词本录入单词",
       "textConfig": {
         "height": 100,
         "placeholderText": "单词本的token"
+      }
+    },
+    {
+      "identifier": "testToken",
+      "type": "text",
+      "title": "testToken",
+      "textConfig": {
+        "height": 100,
+        "placeholderText": "测试环境的token"
+      }
+    },
+    {
+      "identifier": "devToken",
+      "type": "text",
+      "title": "devToken",
+      "textConfig": {
+        "height": 100,
+        "placeholderText": "开发环境的token"
       }
     },
     {

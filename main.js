@@ -1,5 +1,5 @@
 var ENV_URL = {
-  dev: "http://localhost:4999",
+  dev: "http://192.169.2.8:4999",
   test: "http://192.168.2.105:4999",
   pro: "http://106.52.129.230:4999",
 };
@@ -35,7 +35,7 @@ function callback(query) {
 }
 
 async function translate(query) {
-  if (!$option.token.trim()) {
+  if (!$option[$option.env + "Token"].trim()) {
     done(query, "请先设置Token");
   } else {
     const word = query.text.trim();
@@ -57,7 +57,7 @@ async function addWord(word, handler) {
     method: "POST",
     url: `${ENV_URL[$option.env]}/userBook/addWordFromOthers`,
     header: {
-      Authorization: `Bearer ${$option.token.trim()}`,
+      Authorization: `Bearer ${$option[$option.env + "Token"].trim()}`,
       "Content-Type": "application/json",
     },
     body: {
