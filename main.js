@@ -1,7 +1,7 @@
 var ENV_URL = {
   dev: "http://192.168.2.8:4999",
   test: "http://192.168.2.105:4999",
-  pro: "http://106.52.129.230:4999",
+  pro: "https://word-chips-api.tachikoma.online",
 };
 
 function isAllAlphabetWithSpace(str) {
