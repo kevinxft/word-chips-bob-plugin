@@ -1,38 +1,38 @@
 {
   "identifier": "word-chips",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "category": "translate",
   "name": "单词碎片",
   "author": "kevinxft",
-  "summary": "往wordchips录入单词的插件",
+  "summary": "往单词碎片小程序录入单词的插件",
   "homepage": "chat.tachikoma.online",
   "options": [
     {
-      "identifier": "proToken",
+      "identifier": "proKey",
       "type": "text",
-      "title": "proToken",
-      "desc": "需要token才能往单词本录入单词",
+      "title": "正式环境",
+      "desc": "需要ApiKey才能往单词本录入单词",
       "textConfig": {
-        "height": 100,
-        "placeholderText": "单词本的token"
+        "height": 40,
+        "placeholderText": "ApiKey"
       }
     },
     {
-      "identifier": "testToken",
+      "identifier": "testKey",
       "type": "text",
-      "title": "testToken",
+      "title": "测试环境",
       "textConfig": {
-        "height": 100,
-        "placeholderText": "测试环境的token"
+        "height": 40,
+        "placeholderText": "测试环境的key"
       }
     },
     {
-      "identifier": "devToken",
+      "identifier": "devKey",
       "type": "text",
-      "title": "devToken",
+      "title": "开发环境",
       "textConfig": {
-        "height": 100,
-        "placeholderText": "开发环境的token"
+        "height": 40,
+        "placeholderText": "开发环境的key"
       }
     },
     {

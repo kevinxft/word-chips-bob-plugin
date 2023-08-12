@@ -35,8 +35,8 @@ function callback(query) {
 }
 
 async function translate(query) {
-  if (!$option[$option.env + "Token"].trim()) {
-    done(query, "请先设置Token");
+  if (!$option[$option.env + "Key"].trim()) {
+    done(query, "请先设置ApiKey");
   } else {
     const word = query.text.trim();
     if (isSingleWord(word) && isAllAlphabet(word)) {
@@ -55,13 +55,13 @@ function isSingleWord(text) {
 async function addWord(word, handler) {
   await $http.request({
     method: "POST",
-    url: `${ENV_URL[$option.env]}/userBook/addWordFromOthers`,
+    url: `${ENV_URL[$option.env]}/userBook/addFromApiKey`,
     header: {
-      Authorization: `Bearer ${$option[$option.env + "Token"].trim()}`,
       "Content-Type": "application/json",
     },
     body: {
       name: word,
+      apiKey: $option[$option.env + "Key"].trim(),
     },
     handler,
   });
